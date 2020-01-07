@@ -10,9 +10,9 @@ encoding: utf-8
 title:               My Website
 #tagline:             'foo's website
 description:         Foo's blog...
-url: https://lanyon-plus.sbamin.com
-baseurl: ""
-urlimg: https://lanyon-plus.sbamin.com/images/
+url: https://pranavgarg.in/blog
+baseurl: "/blog"
+urlimg: https://pranavgarg.in/blog/images/
 ## If you do not have custom domain, comment top three lines, uncomment three lines below and replace dyndna with your github userid and lanyon-plus with your project name. Also, rename CNAME file to CNAME.sample
 #url: https://dyndna.github.io/lanyon-plus
 #baseurl: "/lanyon-plus"
@@ -52,24 +52,24 @@ author:
   name:              Foo Boo
   url:               https://twitter.com/abcd
   avatar:         foo.png
-  #email:           
+  #email:
 
 # Owner/author information
 owner:
   name:           Foo Boo
   avatar:         foo.png
-  #email:          
+  #email:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        abcd
-  facebook:       
+  facebook:
   github:         xyz123abc
-  stackexchange:  
+  stackexchange:
   linkedin:       https://www.linkedin.com/in/foo
-  instagram:      
+  instagram:
   flickr:
-  tumblr:  
+  tumblr:
   google_plus:    https://plus.google.com/+foo
   # orcid and google scholar IDs are different than standard username.
   orcid: xyz123abc
