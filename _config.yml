@@ -7,9 +7,10 @@ relative_permalinks: false
 encoding: utf-8
 
 # Setup
-title:               My Website
-#tagline:             'foo's website
+title:               Pranav Garg's Blog
+tagline:             Blog
 description:         Foo's blog...
+homeurl: https://pranavgarg.in
 url: https://pranavgarg.in/blog
 baseurl: "/blog"
 urlimg: https://pranavgarg.in/blog/images/
@@ -49,55 +50,50 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 
 # About/contact
 author:
-  name:              Foo Boo
-  url:               https://twitter.com/abcd
+  name:              Pranav Garg
+  url:               https://twitter.com/pgtgrly
   avatar:         foo.png
   #email:
 
 # Owner/author information
 owner:
-  name:           Foo Boo
+  name:           Pranav Garg
   avatar:         foo.png
   #email:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        abcd
+  twitter:        pgtgrly
   facebook:
-  github:         xyz123abc
+  github:         pgtgrly
   stackexchange:
   linkedin:       https://www.linkedin.com/in/foo
   instagram:
-  flickr:
-  tumblr:
-  google_plus:    https://plus.google.com/+foo
-  # orcid and google scholar IDs are different than standard username.
-  orcid: xyz123abc
-  gscholar: xyz123abc
 
 ## sidebar links:
 # For external links add external: true
 links:
-  - title: <i class="iconside iconm-home"></i> Home
-    url: /
+  - title: <i class="iconside iconm-home"></i> Homepage
+    url: https://pranavgarg.in
+    external: true
   - title: <i class="iconside iconm-user"></i> About
     url: /about/
-  - title: <i class="iconside iconm-quill"></i> Blog
+  - title: <i class="iconside iconm-quill"></i> Posts
     url: /blog/
   - title: <i class="fa fa-tags"></i> Tags
     url: /tags/
   - title: <i class="fa fa-archive"></i> Archive
     url: /archive/
   - title: <i class="iconside iconm-wordpress"></i> Old Blog
-    url: https://foo.wordpress.com
+    url: https://thesilentmonksretreat.wordpress.com/
     external: true
-  - title: <i class="iconside iconm-envelop"></i> Contact
-    url: /contact/
-  - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/abcd
+  - title: <i class="iconside iconm-file-profile"></i> My Resume
+    url: https://pranavgarg.in/#resume
     external: true
-  - title: <i class="iconside iconm-feed2"></i> Feed
-    url: /feed.xml
+  - title: <i class="iconside iconm-envelop"></i> Contact me!
+    url: https://pranavgarg.in/#contact
+    external: true
+
 
 # Google Custom Search:
 #google_search: xyz123abc
@@ -112,7 +108,4 @@ disqus_shortname: foo
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   xyz123abc
 
-#### For dummy website only - remove if you wish ####
-github_repo: https://github.com/dyndna/lanyon-plus
-version: 1.1.1
 ## END ##

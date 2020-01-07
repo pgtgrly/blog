@@ -15,7 +15,7 @@
 }
 
 .masthead-title .headicons a {
-  color: #505050; 
+  color: #505050;
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ i.iconside {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #ffffff;    
+    background-color: #ffffff;
 }
 
 .iconm:hover {
