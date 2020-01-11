@@ -2,14 +2,12 @@
 ---
 
 /* TEAM */
-Primary Contact: foo
+Primary Contact: Pranav Garg
 Site: {{ site.url }}/about/
 Twitter: https://twitter.com/{{ site.owner.twitter }}
 
-/* THANKS */
-Design Contributors: {{ site.url }}/disclosure/
 
 /* SITE */
 Last Updated: {{ site.time | date:"%Y/%m/%d" }}
 Standards: HTML5, CSS3
-Software: Sublime Text, Chrome, Jekyll, Git, Sass
+Software: Atom, Chrome, Jekyll, Git, Sass

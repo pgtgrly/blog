@@ -1,8 +1,8 @@
 ---
-title: "Redirecting to Curriculum Vitae page"
+title: "Redirecting to Resume page"
 layout: redirect
 sitemap: true
-permalink: /resume/
-redirect_to:  /cv/
+permalink: /cv/
+redirect_to:  /resume/
 #teaser: SYSTEM GENERATED PAGE FOR PAGE REDIRECT FUNCTION. DO NOT EDIT/RENAME/REMOVE THIS PAGE.
 ---

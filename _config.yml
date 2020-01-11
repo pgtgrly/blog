@@ -88,7 +88,7 @@ links:
     url: https://thesilentmonksretreat.wordpress.com/
     external: true
   - title: <i class="iconside iconm-profile"></i> My Resume
-    url: https://pranavgarg.in/#resume
+    url: /resume/
     external: true
   - title: <i class="iconside iconm-envelop"></i> Contact me!
     url: https://pranavgarg.in/#contact
