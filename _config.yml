@@ -8,8 +8,8 @@ encoding: utf-8
 
 # Setup
 title:               Pranav Garg's Blog
-tagline:             Blog
-description:         Foo's blog...
+tagline:             Pranav Garg's Blog
+description:         Pranav Garg's Blog
 homeurl: https://pranavgarg.in
 url: https://pranavgarg.in/blog
 baseurl: "/blog"
@@ -52,7 +52,7 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 author:
   name:              Pranav Garg
   url:               https://twitter.com/pgtgrly
-  avatar:         foo.png
+  avatar:            PG.JPG
   #email:
 
 # Owner/author information
@@ -67,7 +67,7 @@ owner:
   facebook:
   github:         pgtgrly
   stackexchange:
-  linkedin:       https://www.linkedin.com/in/foo
+  linkedin:       https://in.linkedin.com/in/pranavgarg1997
   instagram:
 
 ## sidebar links:
@@ -87,25 +87,11 @@ links:
   - title: <i class="iconside iconm-wordpress"></i> Old Blog
     url: https://thesilentmonksretreat.wordpress.com/
     external: true
-  - title: <i class="iconside iconm-file-profile"></i> My Resume
+  - title: <i class="iconside iconm-profile"></i> My Resume
     url: https://pranavgarg.in/#resume
     external: true
   - title: <i class="iconside iconm-envelop"></i> Contact me!
     url: https://pranavgarg.in/#contact
     external: true
 
-
-# Google Custom Search:
-#google_search: xyz123abc
-
-# Twitter stream widget:
-# Replace xyz123abc with your twitter widget id from https://twitter.com/settings/widgets
-#twitter_widget_id: xyz123abc
-
-# Add disqus username for Disqus comment board:
-disqus_shortname: foo
-
-# Analytics and webmaster tools stuff goes here
-#google_analytics:   xyz123abc
-
-## END ##
+google_analytics:   UA-122465031-1
