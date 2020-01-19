@@ -10,7 +10,7 @@ encoding: utf-8
 title:               My Website
 #tagline:             'foo's website
 description:         Foo's blog...
-homeurl: https//:pranavgarg.in
+homeurl: https://pranavgarg.in
 url:                 http://localhost:4000
 baseurl:  ""
 urlimg: http://localhost:4000/images/
@@ -85,7 +85,8 @@ links:
     external: true
   - title: <i class="iconside iconm-profile"></i> My Resume
     url: /resume/
-    external: true
+  - title: <i class="iconside iconm-terminal"></i> My Talks
+    url: /talks/
   - title: <i class="iconside iconm-envelop"></i> Contact me!
     url: https://pranavgarg.in/#contact
     external: true

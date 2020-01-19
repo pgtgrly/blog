@@ -12,7 +12,6 @@ Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](h
 * add-ons by [Samir Amin](http://sbamin.com)
 
 Maximum four posts on front page where first two posts are featured, and remaining are date sorted.
-<a class="twitter-timeline" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/Pgtgrly?ref_src=twsrc%5Etfw">Tweets by Pgtgrly</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"><script>
 
 <div class="posts">
   {% for post in site.categories.featured limit:2 %}
@@ -50,6 +49,9 @@ Maximum four posts on front page where first two posts are featured, and remaini
   {% endfor %}
 </div>
 <h3 class="post-title">
+<div name="twitter-post">
+<a class="twitter-timeline" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/Pgtgrly?ref_src=twsrc%5Etfw">Tweets by Pgtgrly</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 <div class="pagination" style="margin: 0.5rem;">
     <a class="pagination-item older" href="{{ site.url }}/blog"><i class="fa fa-edit"> Blog</i></a>
     <a class="pagination-item newer" href="{{ site.url }}/tags"><i class="fa fa-tags"> Tags</i></a>

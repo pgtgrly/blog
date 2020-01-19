@@ -1,8 +1,8 @@
 ---
 layout: publ
 category: mypubs
-permalink: /about/publications/
-title: "Sample Publications"
+permalink: 
+title: "My Publications"
 published: true
 description: "Sample publication page"
 tags:
@@ -23,11 +23,11 @@ sitemap:
 style: |
   .container {
         max-width: 48rem;
-    } 
+    }
 ---
 
 {% comment %}
-<!-- bibbase.org should work with following code unless you are hosting domain over https. --> 
+<!-- bibbase.org should work with following code unless you are hosting domain over https. -->
 
 {% if page.bibtex %}
  {% if page.bibtex contains 'http' %}

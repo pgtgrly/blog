@@ -89,7 +89,8 @@ links:
     external: true
   - title: <i class="iconside iconm-profile"></i> My Resume
     url: /resume/
-    external: true
+  - title: <i class="iconside iconm-terminal"></i> My Talks
+    url: /talks/
   - title: <i class="iconside iconm-envelop"></i> Contact me!
     url: https://pranavgarg.in/#contact
     external: true

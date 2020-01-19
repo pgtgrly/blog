@@ -20,5 +20,5 @@ category: base
 </div>
 </div>
 {% else %}
-Google Custom Search key is not set in `_config.yml`
+
 {% endif %}

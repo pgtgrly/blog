@@ -1,7 +1,7 @@
 ---
 layout: publ
 category: myaoi
-permalink: /about/aoi/
+permalink: 
 title: "Articles of interest"
 published: true
 description: "Sample page showing bookmarked papers"
@@ -24,11 +24,11 @@ sitemap:
 style: |
   .container {
         max-width: 48rem;
-    } 
+    }
 ---
 
 {% comment %}
-<!-- bibbase.org should work with following code unless you are hosting domain over https. --> 
+<!-- bibbase.org should work with following code unless you are hosting domain over https. -->
 
 {% if page.bibtex %}
  {% if page.bibtex contains 'http' %}
@@ -43,4 +43,3 @@ style: |
 {% endcomment %}
 
 If category is *myaoi*, then html content from bibtex file at `_includes/myaoi.html` will be shown below.
-
