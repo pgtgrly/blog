@@ -285,7 +285,7 @@ twine upload --skip-existing dist/*
 You can also update the package you downloaded using pip by:
 
 ```
-pip install upgrade sampkg
+pip install --upgrade sampkg
 ```
 
 ## What next?
