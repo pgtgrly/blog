@@ -1,11 +1,11 @@
 ---
 layout: publ
 category: mypubs
-permalink: 
+permalink:
 title: "My Publications"
 published: true
 description: "Sample publication page"
-tags:
+metatags:
   - papers
   - articles
   - research

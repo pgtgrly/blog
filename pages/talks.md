@@ -5,7 +5,7 @@ title: My Talks
 category: base
 published: true
 description: "Pranav Garg's talks at various conferences"
-tags:
+metatags:
   - talks
   - Pranav Garg
   - "Ruby"

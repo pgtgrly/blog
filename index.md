@@ -1,17 +1,18 @@
 ---
 layout: default
 permalink: index.html
-title: Personal Homepage of foo boo
-description: "Blogging on ...."
+title: Pranav Garg's Blog
+description: "Pranav Garg's Blog"
 ---
+Yahaha, you have found my blog!  
 
-## [lanyon-plus](https://github.com/dyndna/lanyon-plus)
+I am really glad that you did.  
+I write about a wide range of miscellaneous topics. So why don't you sit back, relax and dive into the plethora of posts tailored for your reading pleasure.  
 
-Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](https://github.com/mdo)
+You can look at [all of my posts]({{ site.url }}/blog) or [sort them by tags]({{ site.url }}/tags).  
+I hope you you enjoy reading these posts as much as I enjoyed writing them.  
 
-* add-ons by [Samir Amin](http://sbamin.com)
-
-Maximum four posts on front page where first two posts are featured, and remaining are date sorted.
+Can't get enough of these posts? I have some great posts on [old blog]( https://thesilentmonksretreat.wordpress.com/) too.
 
 <div class="posts">
   {% for post in site.categories.featured limit:2 %}

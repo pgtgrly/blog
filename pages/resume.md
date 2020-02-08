@@ -5,7 +5,7 @@ title: Resume
 category: base
 published: true
 description: "Curriculum Vitae / Resume"
-tags:
+metatags:
   - cv
   - resume
   - "foo boo"

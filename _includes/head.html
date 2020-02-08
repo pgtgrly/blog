@@ -17,7 +17,7 @@
 
 <!-- Search Engine Optimization -->
 <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.content %}{{ page.content | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}">
-{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+{% if page.metatags %}<meta name="keywords" content="{{ page.metatags | join: ', ' }}">{% endif %}
 {% if page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
 {% if page.nofollow == true %}<meta name="robots" content="nofollow">{% endif %}
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
@@ -56,7 +56,7 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.min.css">
-{% if page.category contains 'mypubs' or page.category contains 'myaoi' %} 
+{% if page.category contains 'mypubs' or page.category contains 'myaoi' %}
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/publ.css">
 <script src="{{ site.baseurl }}/public/js/jquery.min.js"></script>
 {% endif %}

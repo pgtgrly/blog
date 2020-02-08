@@ -1,11 +1,11 @@
 ---
 layout: publ
 category: myaoi
-permalink: 
+permalink:
 title: "Articles of interest"
 published: true
 description: "Sample page showing bookmarked papers"
-tags:
+metatags:
   - papers
   - articles
   - research

@@ -14,11 +14,14 @@ noindex: false
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2016-02-13
-# tags will be used as html meta keywords.    
-tags:
+    lastmod: 2016-02-13    
+metatags:
   - "Pranav Garg"
   - "pranav garg"
+  - "pranav"
+  - "garg"
+  - "Pranav"
+  - "Garg"
 ---
 
 <div class="post-author text-center">                       
