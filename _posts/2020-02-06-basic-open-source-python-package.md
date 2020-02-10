@@ -83,7 +83,7 @@ We will run the tests from the project’s base directory.
 ```
 
 {:.text-center img}
-![All tests failing]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testfail_0.png "All tests are failing!")
+[![All tests failing]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testfail_0.png "All tests are failing!")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testfail_0.png)
 
 As expected, the tests are failing. As we still need to write the code to make them pass.
 You might be wondering why we did not call ```pytest``` to run the tests, You can read about it [here](https://docs.pytest.org/en/latest/pythonpath.html#pytest-vs-python-m-pytest).
@@ -97,7 +97,7 @@ And edit ~/ sampkg/sammod/\_\_init\_\_.py
 Running the tests again we get:
 
 {:.text-center img}
-![One test failing]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testfail_1.png "One test is still failing!")
+[![One test failing]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testfail_1.png "One test is still failing!")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testfail_1.png)
 
 Seems like I have forgotten to reduce the counter when an object of Samclass is destructed.
 
@@ -106,7 +106,7 @@ Fixing the code:
 And running the tests again, we get:
 
 {:.text-center img}
-![All tests passing]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testpass.png "All tests are passing!!")
+[![All tests passing]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testpass.png "All tests are passing!!")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/testpass.png)
 
 Success!
 
@@ -139,16 +139,16 @@ flake8 .
 This will go through all the py files in the package and point out all the PEP8 violations.
 
 {:.text-center img}
-![Needs Linting]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/LinterOutput.png "This code needs cleaning!")
+[![Needs Linting]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/LinterOutput.png "This code needs cleaning!")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/LinterOutput.png)
 
-This is how our code looks like after cleaning our code.
+This is how our code looks like after cleaning:
 <script src="https://gist.github.com/pgtgrly/4ed48f1ab768e0ca7d4e2674d1bb2c83.js"></script>
 See, our code is much better and more readable now!
 
 Alternatively, you can use flake8 with some text editors and get real-time feedback while typing your code.
 
 {:.text-center img}
-![Flake8 with Atom]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/LinterAtom.png "Flake8 integrated with Atom")
+[![Flake8 with Atom]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/LinterAtom.png "Flake8 integrated with Atom")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/LinterAtom.png)
 
 ## Creating setup.py
 
@@ -193,7 +193,7 @@ First, you need to authorise Travis-CI to access your Github account and select 
 After selecting the repository it will trigger a build which will fail and gives this error:
 
 {:.text-center img}
-![Initial Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail0.png "Initial Travis failure") 
+[![Initial Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail0.png "Initial Travis failure")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail0.png) 
 
 This is because we haven't pushed a file that will configure Travis-CI to our repository yet, so it reverts to a default config file.
 
@@ -209,18 +209,18 @@ This .yml file tells our continuous integration service, how to install our file
 Now that we have written it, we commit the file to the repository. Travis-CI automatically picks up the commit and runs the integration test in the environments defined by you. Look at the Tests run!
 
 {:.text-center img}
-![Travis Tests running]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisTestRunning.png "Travis Tests running")
+[![Travis Tests running]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisTestRunning.png "Travis Tests running")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisTestRunning.png)
 
 It seems like our tests are failing for two environments, Python 2.7 and nightly builds.
 
-![Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1.png "Travis failure") 
+[![Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1.png "Travis failure")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1.png) 
 
 Since, we want our package to work with the stable releases we will remove the "nightly" environment from our .travis.yml file.
 
 <script src="https://gist.github.com/pgtgrly/d15367a54d06361391a40ab4afce7efe.js"></script>
 
 However, we do want our package to work with Python 2.7. We need yo investigate the logs for this environment.
-![Travis failure reason]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1Reason.png "Travis failure reason") 
+[![Travis failure reason]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1Reason.png "Travis failure reason")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1Reason.png) 
 It seems like type(self) within Samclass is returning "instance" instead of "Samclass" in Python 2.7.
 After some effective Googling, I came across this [answer](https://stackoverflow.com/a/6667098). We need to explicitly inherit from "object" class.
 
@@ -229,7 +229,7 @@ Fixing the code:
 <script src="https://gist.github.com/pgtgrly/ef62bc3fe8111988262503c0171bf3ba.js"></script>
 
 Now that we have fixed the code we commit it to the repository and trigger another round of builds. 
-![Travis Pass]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisPass.png "Travis Pass") 
+[![Travis Pass]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisPass.png "Travis Pass")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisPass.png) 
 
 Rejoice! Everything is passing. 
 
