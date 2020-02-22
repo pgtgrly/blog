@@ -31,6 +31,8 @@ In the summer of 2018, I had the privilege to create a plotting library in Ruby 
 
 To solidify the software development concepts that I learned, I decided to use them with Python. In this post we will create a simple open-source Python package from scratch that should work with Python 2.7 and Python 3.
 
+The code used in this blog post can be found [here](https://github.com/pgtgrly/sampkg).
+
 Let us name our package **sampkg** (named after the Greek god of sample packages). Our package is going to have a module, **sammod** (which is actually named after the Nordic god of sample modules).  
 The module, will contain a class (**Samclass**) that will have a string (**samstring**) and a function that returns the string with “hello “ prepended (**sam\_inst\_func**) as instance attributes along with a integer(**counter** , which counts number of instances) as a class attribute.  
 Along with _Samclass_, _sammod_ will also contain a function (**sam\_func**) that will that take a Samclass object and return a string containing natural logarithm of _counter_ (calculated using numpy) and a reversed _samstring._
@@ -193,7 +195,7 @@ First, you need to authorise Travis-CI to access your Github account and select 
 After selecting the repository it will trigger a build which will fail and gives this error:
 
 {:.text-center img}
-[![Initial Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail0.png "Initial Travis failure")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail0.png) 
+[![Initial Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail0.png "Initial Travis failure")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail0.png)
 
 This is because we haven't pushed a file that will configure Travis-CI to our repository yet, so it reverts to a default config file.
 
@@ -213,14 +215,14 @@ Now that we have written it, we commit the file to the repository. Travis-CI aut
 
 It seems like our tests are failing for two environments, Python 2.7 and nightly builds.
 
-[![Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1.png "Travis failure")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1.png) 
+[![Travis failure]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1.png "Travis failure")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1.png)
 
 Since, we want our package to work with the stable releases we will remove the "nightly" environment from our .travis.yml file.
 
 <script src="https://gist.github.com/pgtgrly/d15367a54d06361391a40ab4afce7efe.js"></script>
 
 However, we do want our package to work with Python 2.7. We need yo investigate the logs for this environment.
-[![Travis failure reason]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1Reason.png "Travis failure reason")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1Reason.png) 
+[![Travis failure reason]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1Reason.png "Travis failure reason")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisFail1Reason.png)
 It seems like type(self) within Samclass is returning "instance" instead of "Samclass" in Python 2.7.
 After some effective Googling, I came across this [answer](https://stackoverflow.com/a/6667098). We need to explicitly inherit from "object" class.
 
@@ -228,10 +230,10 @@ Fixing the code:
 
 <script src="https://gist.github.com/pgtgrly/ef62bc3fe8111988262503c0171bf3ba.js"></script>
 
-Now that we have fixed the code we commit it to the repository and trigger another round of builds. 
-[![Travis Pass]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisPass.png "Travis Pass")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisPass.png) 
+Now that we have fixed the code we commit it to the repository and trigger another round of builds.
+[![Travis Pass]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisPass.png "Travis Pass")]({{ site.urlimg }}/media/2020-02-06-basic-open-source-python-package/TravisPass.png)
 
-Rejoice! Everything is passing. 
+Rejoice! Everything is passing.
 
 Whenever we will push a new commit now, Travis-CI will inform you if it is successfully building in all the desired environments!
 
@@ -322,4 +324,3 @@ I have included dist and .egg-info for your viewing pleasure, they will (and sho
 Now that you have been familiarised to the tools you need to create an open-source Python project. What are you waiting for? Go create the next disruptive package!
 
 Make sure to tweet to me[@pgtgrly](https://twitter.com/pgtgrly), if this post helped you or if you have any suggestions. I would love to hear from you!
-
